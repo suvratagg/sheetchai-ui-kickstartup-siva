@@ -1,1 +1,17 @@
-<p>teaminfo works!</p>
+<div align="center">
+  <div style="margin-left: 150px;margin-right: 150px;">
+    <h1 style="padding: 50px;">Team {{teamname}}</h1>
+    <div class="card-deck">
+      <div *ngFor="let item of teaminfo">
+        <div class="card" style="width:400px;">
+          <img class="card-img-top" src="{{item.image}}" alt="Card image" style="max-height: 400px;">
+          <div class="card-body">
+            <h4 class="card-title">{{item.title}}</h4>
+            <p class="card-text">{{item.description}}</p>
+            <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

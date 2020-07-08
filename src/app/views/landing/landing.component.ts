@@ -12,12 +12,25 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
   };
 
+  showUpload: boolean = false;
+  teamname:string = "Alpha";
+  commits:any = ["First commit V1", "Second commit V2", "Third commit V3"];
+
   fileChange(args) {
     console.log("File Change Achieved");
   };
 
   upload() {
     console.log("upload pressed");
+  };
+
+  handleCommit() {
+    console.log("commit pressed");
+    this.showUpload = true;
+  };
+
+  handleUpdate() {
+    console.log("update pressed");
   };
 
 }

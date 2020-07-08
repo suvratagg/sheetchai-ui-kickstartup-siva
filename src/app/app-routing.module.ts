@@ -6,7 +6,7 @@ import { TeaminfoComponent } from './views/teaminfo/teaminfo.component';
 const routes: Routes = [
   { path: '', redirectTo: '/landing', pathMatch: 'full' },
   { path: 'landing', component: LandingComponent },
-  { path: 'team-info', component: TeaminfoComponent },
+  { path: 'team-info/:teamname', component: TeaminfoComponent },
 ];
 
 @NgModule({
